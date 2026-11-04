@@ -1,0 +1,17 @@
+Version: 0.76.1
+Vulnerability DB:
+  Version: 2
+  UpdatedAt: 2026-11-04 07:16:25.226375897 +0000 UTC
+  NextUpdate: 2026-11-05 07:16:25.22637534 +0000 UTC
+  DownloadedAt: 2026-11-04 12:16:45.242316445 +0000 UTC
+Java DB:
+  Version: 1
+  UpdatedAt: 2026-11-04 01:07:50.003332442 +0000 UTC
+  NextUpdate: 2026-11-07 01:07:50.003332322 +0000 UTC
+  DownloadedAt: 2026-11-04 12:17:53.027177111 +0000 UTC
+Path:      /grype-db/6/vulnerability.db
+Schema:    v6.1.10
+Built:     2026-11-04T06:20:59Z
+From:      https://grype.anchore.io/databases/v6/vulnerability-db_v6.1.10_2026-11-04T00:19:46Z_1793773259.tar.zst?checksum=sha256%3Aed08c5e32eb299ebc83b87ab05b23debd749b55c30cf73281ec4223851b5f896
+Status:    valid
+Wed, Nov  4, 2026 12:19:38 PM
