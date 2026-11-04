@@ -1,0 +1,4 @@
+# keep LF everywhere - autocrlf=true on my Windows box breaks .sh and .patch in containers
+* text=auto eol=lf
+*.patch -text
+*.deb binary
