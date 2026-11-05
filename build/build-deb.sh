@@ -35,12 +35,13 @@ strip_bin "$R"/usr/sbin/nginx "$R"/usr/sbin/nginx-debug
 # config: nginx.conf + default.conf from pkg-oss, the rest from the nginx source
 install -m 644 "$PKG"/nginx.conf         "$R"/etc/nginx/nginx.conf
 install -m 644 "$PKG"/nginx.default.conf "$R"/etc/nginx/conf.d/default.conf
-install -m 644 "$SRC"/conf/mime.types "$SRC"/conf/fastcgi_params \
+# -p keeps the tarball timestamps, so ETag/Last-Modified match the original
+install -p -m 644 "$SRC"/conf/mime.types "$SRC"/conf/fastcgi_params \
                "$SRC"/conf/scgi_params "$SRC"/conf/uwsgi_params "$R"/etc/nginx/
 ln -s /usr/lib/nginx/modules "$R"/etc/nginx/modules
 
 # default web pages
-install -m 644 "$SRC"/html/index.html "$SRC"/html/50x.html "$R"/usr/share/nginx/html/
+install -p -m 644 "$SRC"/html/index.html "$SRC"/html/50x.html "$R"/usr/share/nginx/html/
 
 # service files (unused in a container, shipped because the original has them)
 sed -e 's/%%PROVIDES%%/nginx/g' -e 's/%%DEFAULTSTART%%/2 3 4 5/g' -e 's/%%DEFAULTSTOP%%/0 1 6/g' \

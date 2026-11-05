@@ -5,7 +5,9 @@ export MSYS_NO_PATHCONV=1
 IMAGE = echo-nginx:1.25.5
 export IMAGE
 
-.PHONY: deb image check-image check-cve clean
+PYTHON ?= python
+
+.PHONY: deb image test check-image check-cve clean
 
 # build nginx from source in a clean debian:bookworm-slim, write the .deb files to ./out/
 deb:
@@ -14,6 +16,11 @@ deb:
 # final image: install the .debs into bookworm-slim (Containerfile)
 image: deb
 	docker build -f Containerfile -t $(IMAGE) .
+
+# compatibility test: same requests to nginx:1.25-bookworm and our image, responses
+# must match (see test/README.md). Exits non-zero on any mismatch.
+test: image
+	$(PYTHON) -I test/compat/compat_test.py
 
 # compare our image with nginx:1.25-bookworm (config, layout, user, size, smoke test)
 check-image: image
