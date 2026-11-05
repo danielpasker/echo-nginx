@@ -1,0 +1,8 @@
+# Rendered at container start by /docker-entrypoint.d/20-envsubst-on-templates.sh
+# into /etc/nginx/conf.d/greeting.conf, with ${COMPAT_GREETING} from the env.
+server {
+    listen 8081;
+    location / {
+        return 200 "greeting=${COMPAT_GREETING}\n";
+    }
+}

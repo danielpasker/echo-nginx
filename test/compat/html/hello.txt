@@ -1,0 +1,3 @@
+Hello from the compatibility test.
+This text is long enough to be gzip compressed by nginx.
+This text is long enough to be gzip compressed by nginx.
