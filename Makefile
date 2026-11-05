@@ -7,7 +7,7 @@ export IMAGE
 
 PYTHON ?= python
 
-.PHONY: deb image test check-image check-cve clean
+.PHONY: deb image test check-image check-cve scan clean
 
 # build nginx from source in a clean debian:bookworm-slim, write the .deb files to ./out/
 deb:
@@ -37,6 +37,25 @@ check-cve: image
 	  bash test/$$c/check.sh > test/$$c/result.txt || status=1; \
 	  cat test/$$c/result.txt; echo; \
 	done; exit $$status
+
+# rescan our image with the same pinned scanners as baseline/ (input for the
+# README's residual risk section). Reports go to rescan/.
+TRIVY = aquasec/trivy:0.76.1
+GRYPE = anchore/grype:v0.121.1
+HOSTDIR := $(shell pwd -W 2>/dev/null || pwd)
+SOCK = -v /var/run/docker.sock:/var/run/docker.sock
+TRIVY_RUN = docker run --rm $(SOCK) -v trivy-cache:/root/.cache -v "$(HOSTDIR)/rescan:/out" $(TRIVY)
+GRYPE_RUN = docker run --rm $(SOCK) -v grype-db:/grype-db -e GRYPE_DB_CACHE_DIR=/grype-db -v "$(HOSTDIR)/rescan:/out" $(GRYPE)
+
+scan: image
+	mkdir -p rescan
+	$(TRIVY_RUN) image -q --format table --output /out/trivy.txt $(IMAGE)
+	$(TRIVY_RUN) image -q --format json --output /out/trivy.json $(IMAGE)
+	$(GRYPE_RUN) -q $(IMAGE) -o table --file /out/grype.txt
+	$(GRYPE_RUN) -q $(IMAGE) -o json --file /out/grype.json
+	{ docker run --rm -v trivy-cache:/root/.cache $(TRIVY) version; \
+	  docker run --rm -v grype-db:/grype-db -e GRYPE_DB_CACHE_DIR=/grype-db $(GRYPE) db status; \
+	  date -u; } > rescan/scanner-versions.txt
 
 clean:
 	rm -rf out/
