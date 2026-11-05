@@ -9,6 +9,22 @@ an image that's a drop-in replacement for `nginx:1.25-bookworm`. Two CVEs are fi
 Both fixes and the drop-in claim are checked by automated tests (`make test`, `make check-image`,
 `make check-cve`).
 
+| Result | |
+|---|---|
+| CVEs fixed | CVE-2026-15176 (backport) and CVE-2024-5535 (bump), each with a stock-vs-ours check |
+| Drop-in | image config, nginx file layout and user identical; 33/33 HTTP compatibility cases identical |
+| Scan (Trivy) | 835 findings (21 critical) -> 465 (3 critical); none of the remaining ones has a fix available |
+| Image size | 273 MB -> 283 MB |
+
+## Run it
+
+Used exactly like the original:
+
+```
+docker run -d -p 8080:80 echo-nginx:1.25.5
+docker run -d -p 8080:80 -v "$PWD/my.conf:/etc/nginx/conf.d/default.conf:ro" echo-nginx:1.25.5
+```
+
 ## Repo layout
 
 | Path | What |
@@ -39,12 +55,14 @@ Docker's cache makes it much faster.
 
 What the build does (`build/Dockerfile`):
 1. Downloads nginx 1.25.5 and checks its sha256 and its gpg signature against pinned nginx developer keys.
-2. Downloads OpenSSL 3.5.9 and checks it the same way against OpenSSL's release key, then builds it once as static libraries.
+2. Downloads OpenSSL 3.5.9 and checks it the same way against OpenSSL's release key, then builds it once as
+   static libraries.
 3. Downloads nginx's own packaging files (pkg-oss, tag `1.25.5-1`) for config files and maintainer scripts.
 4. Applies `build/patches/*.patch` with `patch --fuzz=0`.
 5. Configures with the exact `./configure` arguments of the original package (`build/configure-args`), plus
    `--with-openssl`, and builds nginx, nginx-debug and the geoip / image-filter / xslt modules.
-6. Packages everything with `build/build-deb.sh` (`dpkg-deb`) using the same paths and metadata as the original packages.
+6. Packages everything with `build/build-deb.sh` (`dpkg-deb`) using the same paths and metadata as the
+   original packages.
 
 ## Image size
 
@@ -58,10 +76,10 @@ shipped, which saves about 4 MB. Source: `docker image inspect`, see [`test/comp
 
 ## CVEs fixed
 
-| CVE | Severity (vendor / Grype) | Where | Fix method | Evidence |
+| CVE | Severity (vendor / Trivy / Grype) | Where | Fix method | Evidence |
 |---|---|---|---|---|
-| CVE-2026-15176 | medium / Critical | nginx, `alias` + `rewrite` path mapping | **backport** of upstream commit [`f8a23425`](https://github.com/nginx/nginx/commit/f8a23425bd6840c4c36b4264edf576ba3646156f) (nginx 1.31.7) | [PR #4](https://github.com/danielpasker/echo-nginx/pull/4), [patch](build/patches/CVE-2026-15176.patch), [stock vs ours](test/cve-2026-15176/result.txt) |
-| CVE-2024-5535 | Low / Critical | OpenSSL `SSL_select_next_proto()` | **version bump**: OpenSSL 3.0.11 (Debian, loaded at runtime) -> 3.5.9 LTS built from source, linked statically | [PR #5](https://github.com/danielpasker/echo-nginx/pull/5), [configure-args](build/configure-args), [stock vs ours](test/cve-2024-5535/result.txt) |
+| CVE-2026-15176 | medium / not reported / Critical | nginx, `alias` + `rewrite` path mapping | **backport** of upstream commit [`f8a23425`](https://github.com/nginx/nginx/commit/f8a23425bd6840c4c36b4264edf576ba3646156f) (nginx 1.31.7) | [PR #4](https://github.com/danielpasker/echo-nginx/pull/4), [patch](build/patches/CVE-2026-15176.patch), [applies to 1.25.5](triage/evidence/CVE-2026-15176.txt), [stock vs ours](test/cve-2026-15176/result.txt) |
+| CVE-2024-5535 | Low / Low / Critical | OpenSSL `SSL_select_next_proto()` | **version bump**: OpenSSL 3.0.11 (Debian, loaded at runtime) -> 3.5.9 LTS built from source, linked statically | [PR #5](https://github.com/danielpasker/echo-nginx/pull/5), [configure-args](build/configure-args), [fixed in 3.5.9](triage/evidence/CVE-2024-5535.txt), [stock vs ours](test/cve-2024-5535/result.txt) |
 
 **CVE-2026-15176.** In a location with `alias`, a `rewrite` to a URI shorter than the location prefix makes
 nginx compute a negative path length. Lengths are unsigned, so it wraps around. On the stock image the
@@ -83,7 +101,7 @@ Why these two and not others: [triage/README.md](triage/README.md). The full per
 
 - `make check-image`: entrypoint, cmd, ports, stop signal, env, user and workdir are identical. The nginx file
   layout (paths, modes, owners, symlinks) and the `nginx` user (uid/gid 101) are identical. Packages are identical
-  except njs. Result: [`test/compare-image.txt`](test/compare-image.txt)
+  except njs and its dependency libedit2. Result: [`test/compare-image.txt`](test/compare-image.txt)
 - `make test`: 33 HTTP cases sent as raw bytes to both images, including malformed requests, large bodies,
   ranges, gzip, custom config, the entrypoint's template rendering and TLS. Responses must match byte for byte
   (only `Date` is ignored). The CVE-2026-15176 case must differ.
@@ -108,19 +126,22 @@ The vulnerability DB is one day newer than the baseline's.
 - **The 3 remaining criticals:** libaom3 CVE-2023-6879 (AV1 encoder, image-filter dependency), libxml2
   CVE-2026-6653 (xslt dependency, fix deferred by Debian), zlib1g CVE-2023-45853 (in minizip, which isn't part of
   the zlib library nginx uses; Debian won't fix).
-- **nginx itself:** nginx.org lists 28 advisories whose vulnerable range includes 1.25.5, and I fixed one. 1.25 is an old mainline
-  branch that gets no more fixes. Grype still reports 8 CVEs on the `nginx` package: CVE-2026-15176 is fixed
-  but still matched by version string, and CVE-2026-93479 doesn't affect 1.25.5 at all (nginx lists it only for
-  1.30.0-1.30.5 and 1.31.2-1.31.6).
+- **nginx itself:** nginx.org lists 28 advisories whose vulnerable range includes 1.25.5, and I fixed one.
+  1.25 is an old mainline branch that gets no more fixes. Grype still reports 8 CVEs on the `nginx` package:
+  CVE-2026-15176 is fixed but still matched by version string, and CVE-2026-93479 doesn't affect 1.25.5 at all
+  (nginx lists it only for 1.30.0-1.30.5 and 1.31.2-1.31.6).
 - **OpenSSL is now ours to maintain.** Debian's OpenSSL updates no longer reach nginx; a new OpenSSL fix
   means a rebuild. Scanners can't see the static OpenSSL either way.
 - **njs** isn't rebuilt. Configs that load it won't start.
 
 **What I'd do next, in order:**
-1. Move to a supported nginx line (1.30.x stable) instead of carrying 1.25.5. Backporting 28 advisories isn't sustainable.
-2. If staying on 1.25.5: backport the small ones next (CVE-2026-97629 is one line and applies cleanly; CVE-2026-95101 is 4 lines).
+1. Move to a supported nginx line (1.30.x stable) instead of carrying 1.25.5. Backporting 28 advisories
+   isn't sustainable.
+2. If staying on 1.25.5: backport the small ones next (CVE-2026-97629 is one line and applies cleanly;
+   CVE-2026-95101 is 4 lines).
 3. Publish a VEX document for CVE-2026-15176 so scanners stop reporting it.
-4. Offer a slim variant without image-filter / xslt / geoip for users who don't load them. That removes most of the remaining findings.
+4. Offer a slim variant without image-filter / xslt / geoip for users who don't load them. That removes most
+   of the remaining findings.
 
 ## Surprises
 
@@ -136,7 +157,8 @@ The vulnerability DB is one day newer than the baseline's.
   upstream strips at packaging time.
 - **The first image was missing `ca-certificates`.** Upstream installs it to fetch its apt key and it stays in
   the image. The package comparison caught it.
-- **`ETag`/`Last-Modified` differed on the default page** because our html files were dated at build time. Fixed with `install -p`.
+- **`ETag`/`Last-Modified` differed on the default page** because our html files were dated at build time.
+  Fixed with `install -p`.
 - **nginx's `--with-openssl` rebuilt OpenSSL, including all of its test programs, in each of the 4 builds.**
   Building it once without tests took the build from 5+ minutes to about 1.5.
 - Windows-specific: `core.autocrlf=true` would have broken scripts and patches in Linux containers
