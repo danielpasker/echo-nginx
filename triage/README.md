@@ -36,7 +36,7 @@ about half of all findings. nginx's own code has 8.
 | CVE | Where | Severity (vendor / Grype) | Upstream fix | Method | Evidence |
 |---|---|---|---|---|---|
 | CVE-2026-15176 | nginx, `ngx_http_core_module.c` | medium / Critical | nginx 1.31.7, commit [`f8a23425`](https://github.com/nginx/nginx/commit/f8a23425bd6840c4c36b4264edf576ba3646156f) | backport | [check-cve-2026-15176.sh](check-cve-2026-15176.sh), [output](evidence/CVE-2026-15176.txt), [patch](../build/patches/CVE-2026-15176.patch), [runtime check](../test/cve-2026-15176/result.txt) |
-| CVE-2024-5535 | OpenSSL `SSL_select_next_proto()` | Low / Critical | OpenSSL 3.0.15 | bump to OpenSSL 3.0.22, linked statically into nginx | [check-cve-2024-5535.sh](check-cve-2024-5535.sh), [output](evidence/CVE-2024-5535.txt) |
+| CVE-2024-5535 | OpenSSL `SSL_select_next_proto()` | Low / Critical | OpenSSL 3.0.15 / 3.3.2 | bump to OpenSSL 3.5.9 LTS, linked statically into nginx | [check-cve-2024-5535.sh](check-cve-2024-5535.sh), [output](evidence/CVE-2024-5535.txt), [runtime check](../test/cve-2024-5535/result.txt) |
 
 ### CVE-2026-15176: backport
 
@@ -69,20 +69,38 @@ against 1.25.5). `make check-cve` runs the same config on stock and on our build
 255 bytes of memory to the peer. The image runs OpenSSL 3.0.11. The fix is in 3.0.15.
 
 Why this one:
-- nginx calls this function itself, in its ALPN callback (http, stream and mail SSL modules). That
-  callback runs during the TLS handshake on every HTTPS connection. So it's code nginx actually runs.
+- nginx calls this function itself, in its ALPN callback (http, stream and mail SSL modules), during
+  the TLS handshake.
+- How exploitable it is through nginx: low. The bug needs an *empty* client protocol list, and OpenSSL's
+  server side rejects an empty ALPN extension before nginx's callback runs (`tls_parse_ctos_alpn`
+  requires at least 2 bytes). OpenSSL's advisory says the same: "In the case of ALPN the list of protocols
+  supplied by the client is guaranteed by libssl to never be zero in length", which is why it's rated Low.
+  I still count it as eliminated: the vulnerable library version is gone from nginx.
 
-Why 3.0.22: it's the last 3.0.x release, so it's the same API nginx 1.25.5 was built against (3.0.9). It
-also covers every libssl3 CVE in the scan. The downside is that 3.0 is now out of support upstream (see below).
+Why 3.5.9 and not 3.0.x: I first planned 3.0.22 (same 3.0 API nginx was built against). But when I
+built from source, today's bookworm already ships `libssl3 3.0.22-1~deb12u2`, so a plain rebuild already
+gets 3.0.22 and that would only be a base refresh, not a bump. 3.5.9 is the current LTS (supported until
+April 2030), newer than anything bookworm ships, and 3.0 is out of support upstream.
 
 Same bump also fixes CVE-2024-6119 (crash in certificate hostname checks, reachable with `proxy_ssl_verify`).
 
-Evidence: the sha256 of `openssl-3.0.22.tar.gz` matches the published one. nginx 1.25.5 calls
-`SSL_select_next_proto` in 3 places. OpenSSL's own `CHANGES.md` lists the fix under 3.0.15.
+How it's built: `--with-openssl=/src/openssl` in `build/configure-args`. The OpenSSL tarball is checked
+against its sha256 and OpenSSL's release signing key, built once as static libraries, and linked into
+`nginx` / `nginx-debug`. `libssl3` is no longer in the nginx package's `Depends`.
 
-Limitation: OpenSSL compiled into nginx is invisible to scanners. The `libssl3` package stays in the image
-because curl and the base need it. Proof for the bump is `nginx -V` ("built with OpenSSL 3.0.22") and
-`ldd` showing nginx no longer loads `libssl.so`.
+Evidence:
+- [triage check](evidence/CVE-2024-5535.txt): the sha256 of `openssl-3.5.9.tar.gz` matches the published
+  one, nginx 1.25.5 calls `SSL_select_next_proto` in 3 places, and OpenSSL 3.5.9's `CHANGES.md` has the fix
+  (under 3.3.2; the 3.0 branch got it in 3.0.15).
+- [runtime check](../test/cve-2024-5535/result.txt) (`make check-cve`): stock is built with 3.0.9 and loads
+  `libssl.so.3` 3.0.11; ours is built with OpenSSL 3.5.9 and `ldd` shows no `libssl`/`libcrypto`. A TLS
+  request with ALPN h2 over HTTP/2 works on ours.
+
+Limitations:
+- OpenSSL compiled into nginx is invisible to scanners. They only see the `libssl3` package, which stays in
+  the image because curl and the base need it.
+- Debian's OpenSSL updates no longer reach nginx. A new OpenSSL fix means rebuilding.
+- The nginx package grows from ~0.85 MB to ~5 MB (OpenSSL is now inside `nginx` and `nginx-debug`).
 
 ## Scanner blind spots
 
@@ -101,7 +119,7 @@ because curl and the base need it. Proof for the bump is `nginx -V` ("built with
   Removal also doesn't count for the assignment.
 - CVE-2026-97629 (TLS ticket keys, 1-line fix) and CVE-2026-95101 (HTTP/3, 4 lines): both apply to 1.25.5,
   but they're harder to demonstrate than CVE-2026-15176.
-- OpenSSL 3.5 LTS: supported until 2030, but a bigger jump for nginx 1.25.5. It's the next step.
+- OpenSSL 3.0.22: already what current bookworm ships, so it's a base refresh, not a bump (see above).
 
 ## Open items
 
