@@ -35,7 +35,7 @@ about half of all findings. nginx's own code has 8.
 
 | CVE | Where | Severity (vendor / Grype) | Upstream fix | Method | Evidence |
 |---|---|---|---|---|---|
-| CVE-2026-15176 | nginx, `ngx_http_core_module.c` | medium / Critical | nginx 1.31.7, commit [`f8a23425`](https://github.com/nginx/nginx/commit/f8a23425bd6840c4c36b4264edf576ba3646156f) | backport | [check-cve-2026-15176.sh](check-cve-2026-15176.sh), [output](evidence/CVE-2026-15176.txt) |
+| CVE-2026-15176 | nginx, `ngx_http_core_module.c` | medium / Critical | nginx 1.31.7, commit [`f8a23425`](https://github.com/nginx/nginx/commit/f8a23425bd6840c4c36b4264edf576ba3646156f) | backport | [check-cve-2026-15176.sh](check-cve-2026-15176.sh), [output](evidence/CVE-2026-15176.txt), [patch](../build/patches/CVE-2026-15176.patch), [runtime check](../test/cve-2026-15176/result.txt) |
 | CVE-2024-5535 | OpenSSL `SSL_select_next_proto()` | Low / Critical | OpenSSL 3.0.15 | bump to OpenSSL 3.0.22, linked statically into nginx | [check-cve-2024-5535.sh](check-cve-2024-5535.sh), [output](evidence/CVE-2024-5535.txt) |
 
 ### CVE-2026-15176: backport
@@ -55,6 +55,13 @@ Why this one:
 
 Evidence: the buggy line is in the 1.25.5 source (line 1887), and the upstream commit applies with
 `patch --fuzz=0` (offset -103 lines, which only means the same code sits higher up in the older file).
+
+Shipped as [`build/patches/CVE-2026-15176.patch`](../build/patches/CVE-2026-15176.patch) (diff regenerated
+against 1.25.5). `make check-cve` runs the same config on stock and on our build
+([result](../test/cve-2026-15176/result.txt)):
+- stock: `malloc(18446744073709551606) failed` in the error log, i.e. a length of -10 wrapped around to 2^64-10
+- ours: `"alias" cannot be used in location ... where URI was rewritten`, no bad length computed. The response is still
+  200 because the config uses `return 200`; only `$request_filename` comes out empty.
 
 ### CVE-2024-5535: bump
 
