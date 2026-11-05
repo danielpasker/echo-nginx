@@ -48,7 +48,7 @@ location /foo/ { alias /bar/; rewrite ^/foo/.*$ /x; return 200 $request_filename
 ```
 
 Why this one:
-- Grype flags it, so I can show it disappearing with VEX later.
+- Grype flags it (Critical), so fixing it addresses a finding a real scanner reports.
 - The fix is a single condition: `if (alias && !r->valid_location)` becomes `if (alias && (!r->valid_location || r->uri_changed))`.
   `uri_changed` already exists in 1.25.5, so nothing else needs backporting.
 - It can be tested at runtime with the config above (stock vs patched behave differently).
@@ -104,7 +104,7 @@ Limitations:
 
 ## Scanner blind spots
 
-- Trivy reports **0** nginx CVEs. nginx.org lists 22 advisories that affect 1.25.5. My understanding is
+- Trivy reports **0** nginx CVEs. nginx.org lists 28 advisories that affect 1.25.5. My understanding is
   that Trivy compares the nginx.org package version (`1.25.5-1~bookworm`) against Debian's own nginx
   package, sees a newer version and treats it as fixed.
 - Example: CVE-2024-7347 (mp4 module) affects 1.25.5 and nginx publishes a patch for it, but neither
@@ -123,5 +123,5 @@ Limitations:
 
 ## Open items
 
-- CVE-2026-93479 (Grype: Critical on nginx) not investigated. Affected range needs checking.
+- CVE-2026-93479 (Grype: Critical on nginx) is a false positive for 1.25.5: nginx.org lists it as vulnerable only in 1.30.0-1.30.5 and 1.31.2-1.31.6 (a regression in newer releases).
 - Upstream fix versions for the other ~840 rows not looked up.
