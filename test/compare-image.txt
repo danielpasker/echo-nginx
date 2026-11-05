@@ -1,0 +1,26 @@
+== 1. image config
+  OK    Entrypoint
+  OK    Cmd
+  OK    ExposedPorts
+  OK    StopSignal
+  OK    Env
+  OK    User
+  OK    WorkingDir
+  info  Labels differ on purpose: ours doesn't claim nginx's maintainer label
+== 2. filesystem layout
+  OK    nginx files (excluding njs)
+  info  njs files only in original: 4
+== 3. nginx user and group
+  OK    user/group
+== 4. packages
+  only in original: libedit2
+  only in original: nginx-module-njs
+  OK    package names (excluding njs, libedit2)
+  nginx package: 1.25.5-1~bookworm -> 1.25.5-1~bookworm+echo1
+== 5. image size (informational)
+  nginx:1.25-bookworm    273 MB
+  echo-nginx:1.25.5      283 MB
+== 6. smoke test
+  OK    GET / (body+status md5) and exit code after docker stop
+
+RESULT: drop-in (config, layout, user, behaviour match; njs not rebuilt)
