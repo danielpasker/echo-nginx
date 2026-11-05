@@ -8,11 +8,16 @@ export MSYS_NO_PATHCONV=1
 deb:
 	docker build --target export --output type=local,dest=out build/
 
-# CVE-2026-15176: stock nginx must show the bug, our build must refuse the request.
-# Output is saved as evidence in result.txt.
+# Per-CVE checks, stock vs our build. Output saved as evidence in result.txt.
+#   CVE-2026-15176 (backport): stock shows the bug, ours refuses the mapping
+#   CVE-2024-5535  (bump):     ours is built with OpenSSL 3.5.9, loads no system libssl
+CVES = cve-2026-15176 cve-2024-5535
+
 check-cve: deb
-	bash test/cve-2026-15176/check.sh > test/cve-2026-15176/result.txt; \
-	  status=$$?; cat test/cve-2026-15176/result.txt; exit $$status
+	@status=0; for c in $(CVES); do \
+	  bash test/$$c/check.sh > test/$$c/result.txt || status=1; \
+	  cat test/$$c/result.txt; echo; \
+	done; exit $$status
 
 clean:
 	rm -rf out/

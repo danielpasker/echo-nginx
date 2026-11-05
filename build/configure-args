@@ -40,3 +40,4 @@
 --with-stream_ssl_preread_module
 --with-cc-opt=-g -O2 -ffile-prefix-map=/data/builder/debuild/nginx-1.25.5/debian/debuild-base/nginx-1.25.5=. -fstack-protector-strong -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fPIC
 --with-ld-opt=-Wl,-z,relro -Wl,-z,now -Wl,--as-needed -pie
+--with-openssl=/src/openssl

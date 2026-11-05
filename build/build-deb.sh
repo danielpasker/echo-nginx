@@ -67,7 +67,7 @@ Architecture: $ARCH
 Maintainer: $MAINT
 Section: httpd
 Priority: optional
-Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libpcre2-8-0 (>= 10.22), libssl3 (>= 3.0.0), zlib1g (>= 1:1.1.4), lsb-base (>= 3.0-6)
+Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libpcre2-8-0 (>= 10.22), zlib1g (>= 1:1.1.4), lsb-base (>= 3.0-6)
 Recommends: logrotate
 Provides: httpd, nginx, nginx-r$BASE
 Conflicts: nginx-common, nginx-core
