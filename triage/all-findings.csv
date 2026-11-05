@@ -1,0 +1,845 @@
+cve,package,installed,fixed_version,trivy_severity,grype_severity,trivy_status,found_by,component,method
+CVE-2024-11053,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u10,Low,Low,fixed,grype+trivy,curl,base-refresh
+CVE-2024-2004,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u6,Low,Low,fixed,grype+trivy,curl,base-refresh
+CVE-2024-2379,curl,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-2398,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u6,Medium,High,fixed,grype+trivy,curl,base-refresh
+CVE-2024-7264,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u7,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2024-8096,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u8,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2024-9681,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u9,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2025-0167,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u11,Low,Low,fixed,grype+trivy,curl,base-refresh
+CVE-2025-0725,curl,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2025-10148,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u15,Low,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2025-10966,curl,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2025-14017,curl,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2025-14524,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u15,Low,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2025-14819,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u15,Low,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2025-15079,curl,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2025-15224,curl,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-10536,curl,7.88.1-10+deb12u5,,Medium,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-107928,curl,7.88.1-10+deb12u5,,Low,High,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-11856,curl,7.88.1-10+deb12u5,,Medium,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-12064,curl,7.88.1-10+deb12u5,,High,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-13608,curl,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-18924,curl,7.88.1-10+deb12u5,,Low,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-1965,curl,7.88.1-10+deb12u5,,Medium,Medium,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-19931,curl,7.88.1-10+deb12u5,,Medium,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-3783,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u15,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2026-3784,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u15,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2026-4873,curl,7.88.1-10+deb12u5,,Medium,Medium,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-5545,curl,7.88.1-10+deb12u5,,Medium,Medium,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-5773,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u15,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2026-6253,curl,7.88.1-10+deb12u5,,Medium,Medium,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-6276,curl,7.88.1-10+deb12u5,,High,High,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-6429,curl,7.88.1-10+deb12u5,,Medium,Medium,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-7168,curl,7.88.1-10+deb12u5,7.88.1-10+deb12u15,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2026-80230,curl,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-82209,curl,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-8286,curl,7.88.1-10+deb12u5,,High,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-8458,curl,7.88.1-10+deb12u5,,High,Medium,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-86409,curl,7.88.1-10+deb12u5,,Low,High,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-86410,curl,7.88.1-10+deb12u5,,Low,High,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-86414,curl,7.88.1-10+deb12u5,,Low,Critical,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-87864,curl,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-87865,curl,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-87866,curl,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-8924,curl,7.88.1-10+deb12u5,,Medium,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-8927,curl,7.88.1-10+deb12u5,,High,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-8932,curl,7.88.1-10+deb12u5,,Medium,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-92388,curl,7.88.1-10+deb12u5,,Medium,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-92389,curl,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-92390,curl,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-92391,curl,7.88.1-10+deb12u5,,Low,High,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-94266,curl,7.88.1-10+deb12u5,,Low,High,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-9547,curl,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-11053,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u10,Low,Low,fixed,grype+trivy,curl,base-refresh
+CVE-2024-2004,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u6,Low,Low,fixed,grype+trivy,curl,base-refresh
+CVE-2024-2379,libcurl4,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-2398,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u6,Medium,High,fixed,grype+trivy,curl,base-refresh
+CVE-2024-7264,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u7,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2024-8096,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u8,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2024-9681,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u9,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2025-0167,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u11,Low,Low,fixed,grype+trivy,curl,base-refresh
+CVE-2025-0725,libcurl4,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2025-10148,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u15,Low,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2025-10966,libcurl4,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2025-14017,libcurl4,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2025-14524,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u15,Low,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2025-14819,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u15,Low,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2025-15079,libcurl4,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2025-15224,libcurl4,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-10536,libcurl4,7.88.1-10+deb12u5,,Medium,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-107928,libcurl4,7.88.1-10+deb12u5,,Low,High,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-11856,libcurl4,7.88.1-10+deb12u5,,Medium,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-12064,libcurl4,7.88.1-10+deb12u5,,High,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-13608,libcurl4,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-18924,libcurl4,7.88.1-10+deb12u5,,Low,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-1965,libcurl4,7.88.1-10+deb12u5,,Medium,Medium,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-19931,libcurl4,7.88.1-10+deb12u5,,Medium,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-3783,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u15,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2026-3784,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u15,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2026-4873,libcurl4,7.88.1-10+deb12u5,,Medium,Medium,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-5545,libcurl4,7.88.1-10+deb12u5,,Medium,Medium,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-5773,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u15,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2026-6253,libcurl4,7.88.1-10+deb12u5,,Medium,Medium,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-6276,libcurl4,7.88.1-10+deb12u5,,High,High,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-6429,libcurl4,7.88.1-10+deb12u5,,Medium,Medium,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-7168,libcurl4,7.88.1-10+deb12u5,7.88.1-10+deb12u15,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2026-80230,libcurl4,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-82209,libcurl4,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-8286,libcurl4,7.88.1-10+deb12u5,,High,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-8458,libcurl4,7.88.1-10+deb12u5,,High,Medium,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-86409,libcurl4,7.88.1-10+deb12u5,,Low,High,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-86410,libcurl4,7.88.1-10+deb12u5,,Low,High,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-86414,libcurl4,7.88.1-10+deb12u5,,Low,Critical,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-87864,libcurl4,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-87865,libcurl4,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-87866,libcurl4,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-8924,libcurl4,7.88.1-10+deb12u5,,Medium,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-8927,libcurl4,7.88.1-10+deb12u5,,High,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-8932,libcurl4,7.88.1-10+deb12u5,,Medium,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-92388,libcurl4,7.88.1-10+deb12u5,,Medium,Critical,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-92389,libcurl4,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-92390,libcurl4,7.88.1-10+deb12u5,,Low,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-92391,libcurl4,7.88.1-10+deb12u5,,Low,High,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-94266,libcurl4,7.88.1-10+deb12u5,,Low,High,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-9547,libcurl4,7.88.1-10+deb12u5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2018-5709,libgssapi-krb5-2,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-26458,libgssapi-krb5-2,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-26461,libgssapi-krb5-2,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-26462,libgssapi-krb5-2,1.20.1-2+deb12u1,1.20.1-2+deb12u3,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2024-37370,libgssapi-krb5-2,1.20.1-2+deb12u1,1.20.1-2+deb12u2,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2024-37371,libgssapi-krb5-2,1.20.1-2+deb12u1,1.20.1-2+deb12u2,Critical,Critical,fixed,grype+trivy,curl,base-refresh
+CVE-2025-24528,libgssapi-krb5-2,1.20.1-2+deb12u1,1.20.1-2+deb12u3,Medium,High,fixed,grype+trivy,curl,base-refresh
+CVE-2025-3576,libgssapi-krb5-2,1.20.1-2+deb12u1,1.20.1-2+deb12u4,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2026-107708,libgssapi-krb5-2,1.20.1-2+deb12u1,,Medium,Medium,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-107778,libgssapi-krb5-2,1.20.1-2+deb12u1,,Medium,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-11850,libgssapi-krb5-2,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-40355,libgssapi-krb5-2,1.20.1-2+deb12u1,1.20.1-2+deb12u5,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2026-40356,libgssapi-krb5-2,1.20.1-2+deb12u1,1.20.1-2+deb12u5,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2018-5709,libk5crypto3,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-26458,libk5crypto3,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-26461,libk5crypto3,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-26462,libk5crypto3,1.20.1-2+deb12u1,1.20.1-2+deb12u3,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2024-37370,libk5crypto3,1.20.1-2+deb12u1,1.20.1-2+deb12u2,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2024-37371,libk5crypto3,1.20.1-2+deb12u1,1.20.1-2+deb12u2,Critical,Critical,fixed,grype+trivy,curl,base-refresh
+CVE-2025-24528,libk5crypto3,1.20.1-2+deb12u1,1.20.1-2+deb12u3,Medium,High,fixed,grype+trivy,curl,base-refresh
+CVE-2025-3576,libk5crypto3,1.20.1-2+deb12u1,1.20.1-2+deb12u4,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2026-107708,libk5crypto3,1.20.1-2+deb12u1,,Medium,Medium,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-107778,libk5crypto3,1.20.1-2+deb12u1,,Medium,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-11850,libk5crypto3,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-40355,libk5crypto3,1.20.1-2+deb12u1,1.20.1-2+deb12u5,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2026-40356,libk5crypto3,1.20.1-2+deb12u1,1.20.1-2+deb12u5,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2018-5709,libkrb5-3,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-26458,libkrb5-3,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-26461,libkrb5-3,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-26462,libkrb5-3,1.20.1-2+deb12u1,1.20.1-2+deb12u3,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2024-37370,libkrb5-3,1.20.1-2+deb12u1,1.20.1-2+deb12u2,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2024-37371,libkrb5-3,1.20.1-2+deb12u1,1.20.1-2+deb12u2,Critical,Critical,fixed,grype+trivy,curl,base-refresh
+CVE-2025-24528,libkrb5-3,1.20.1-2+deb12u1,1.20.1-2+deb12u3,Medium,High,fixed,grype+trivy,curl,base-refresh
+CVE-2025-3576,libkrb5-3,1.20.1-2+deb12u1,1.20.1-2+deb12u4,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2026-107708,libkrb5-3,1.20.1-2+deb12u1,,Medium,Medium,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-107778,libkrb5-3,1.20.1-2+deb12u1,,Medium,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-11850,libkrb5-3,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-40355,libkrb5-3,1.20.1-2+deb12u1,1.20.1-2+deb12u5,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2026-40356,libkrb5-3,1.20.1-2+deb12u1,1.20.1-2+deb12u5,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2018-5709,libkrb5support0,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-26458,libkrb5support0,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-26461,libkrb5support0,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-26462,libkrb5support0,1.20.1-2+deb12u1,1.20.1-2+deb12u3,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2024-37370,libkrb5support0,1.20.1-2+deb12u1,1.20.1-2+deb12u2,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2024-37371,libkrb5support0,1.20.1-2+deb12u1,1.20.1-2+deb12u2,Critical,Critical,fixed,grype+trivy,curl,base-refresh
+CVE-2025-24528,libkrb5support0,1.20.1-2+deb12u1,1.20.1-2+deb12u3,Medium,High,fixed,grype+trivy,curl,base-refresh
+CVE-2025-3576,libkrb5support0,1.20.1-2+deb12u1,1.20.1-2+deb12u4,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2026-107708,libkrb5support0,1.20.1-2+deb12u1,,Medium,Medium,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-107778,libkrb5support0,1.20.1-2+deb12u1,,Medium,High,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-11850,libkrb5support0,1.20.1-2+deb12u1,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-40355,libkrb5support0,1.20.1-2+deb12u1,1.20.1-2+deb12u5,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2026-40356,libkrb5support0,1.20.1-2+deb12u1,1.20.1-2+deb12u5,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2015-3276,libldap-2.5-0,2.5.13+dfsg-5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2017-14159,libldap-2.5-0,2.5.13+dfsg-5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2017-17740,libldap-2.5-0,2.5.13+dfsg-5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2020-15719,libldap-2.5-0,2.5.13+dfsg-5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2023-2953,libldap-2.5-0,2.5.13+dfsg-5,,High,High,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-22185,libldap-2.5-0,2.5.13+dfsg-5,,Low,Negligible,affected,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2024-28182,libnghttp2-14,1.52.0-1+deb12u1,1.52.0-1+deb12u2,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2026-27135,libnghttp2-14,1.52.0-1+deb12u1,1.52.0-1+deb12u3,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2026-58055,libnghttp2-14,1.52.0-1+deb12u1,,Medium,Medium,fix_deferred,grype+trivy,curl,remove-candidate (kept for drop-in)
+CVE-2026-107161,libsasl2-2,2.1.28+dfsg-10,2.1.28+dfsg-10+deb12u1,Medium,High,fixed,grype+trivy,curl,base-refresh
+CVE-2026-107161,libsasl2-modules-db,2.1.28+dfsg-10,2.1.28+dfsg-10+deb12u1,Medium,High,fixed,grype+trivy,curl,base-refresh
+CVE-2025-15661,libssh2-1,1.10.0-3+b1,1.10.0-3+deb12u1,Medium,Medium,fixed,grype+trivy,curl,base-refresh
+CVE-2026-58050,libssh2-1,1.10.0-3+b1,1.10.0-3+deb12u1,High,High,fixed,grype+trivy,curl,base-refresh
+CVE-2026-58051,libssh2-1,1.10.0-3+b1,1.10.0-3+deb12u1,Medium,High,fixed,grype+trivy,curl,base-refresh
+CVE-2026-66032,libssh2-1,1.10.0-3+b1,1.10.0-3+deb12u1,Medium,High,fixed,grype+trivy,curl,base-refresh
+CVE-2026-66034,libssh2-1,1.10.0-3+b1,1.10.0-3+deb12u1,Medium,High,fixed,grype+trivy,curl,base-refresh
+CVE-2026-7598,libssh2-1,1.10.0-3+b1,1.10.0-3+deb12u1,High,Critical,fixed,grype+trivy,curl,base-refresh
+CVE-2011-3374,apt,2.6.1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+TEMP-0841856-B18BAF,bash,5.2.15-2+b2,,Low,,affected,trivy,debian base,accept (no fix)
+CVE-2022-0563,bsdutils,1:2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-14104,bsdutils,1:2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-13595,bsdutils,1:2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-27456,bsdutils,1:2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-3184,bsdutils,1:2.38.1-5+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2026-53613,bsdutils,1:2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-53615,bsdutils,1:2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-78410,bsdutils,1:2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+DLA-4726-1,ca-certificates,20230311,20250419~deb12u1,Unknown,,fixed,trivy,debian base,base-refresh
+DLA-4845-1,ca-certificates,20230311,20250419~deb12u2,Unknown,,fixed,trivy,debian base,base-refresh
+CVE-2016-2781,coreutils,9.1-1,,Low,Low,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2017-18018,coreutils,9.1-1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-5278,coreutils,9.1-1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-56391,coreutils,9.1-1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-56392,coreutils,9.1-1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-102473,dash,0.5.12-2,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-102474,dash,0.5.12-2,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-53910,diffutils,1:3.8-4,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-6297,dpkg,1.21.22,1.21.23,Low,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-2219,dpkg,1.21.22,1.21.23,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2022-27943,gcc-12-base,12.2.0-14,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-4039,gcc-12-base,12.2.0-14,12.2.0-14+deb12u1,Low,Negligible,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-102010,gcc-12-base,12.2.0-14,,Medium,High,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2026-114690,gcc-12-base,12.2.0-14,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-114691,gcc-12-base,12.2.0-14,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-115455,gcc-12-base,12.2.0-14,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-95619,gcc-12-base,12.2.0-14,,Medium,High,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2022-3219,gpgv,2.2.40-1.1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-30258,gpgv,2.2.40-1.1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-68972,gpgv,2.2.40-1.1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-68973,gpgv,2.2.40-1.1,2.2.40-1.1+deb12u2,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-105712,gpgv,2.2.40-1.1,,Low,Low,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-57062,gpgv,2.2.40-1.1,,Low,Low,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-41991,gzip,1.12-1,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-41992,gzip,1.12-1,,High,High,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-54369,libacl1,2.3.1-3,,High,High,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-54370,libacl1,2.3.1-3,,Medium,High,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2011-3374,libapt-pkg6.0,2.6.1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-54371,libattr1,1:2.5.1-4,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2022-0563,libblkid1,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-14104,libblkid1,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-13595,libblkid1,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-27456,libblkid1,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-3184,libblkid1,2.38.1-5+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2026-53613,libblkid1,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-53615,libblkid1,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-78410,libblkid1,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-42250,libbz2-1.0,1.0.8-5+b1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2010-4756,libc-bin,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2018-20796,libc-bin,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2019-1010022,libc-bin,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2019-1010023,libc-bin,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2019-1010024,libc-bin,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2019-1010025,libc-bin,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2019-9192,libc-bin,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-0395,libc-bin,2.36-9+deb12u7,2.36-9+deb12u10,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-15281,libc-bin,2.36-9+deb12u7,2.36-9+deb12u14,Low,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-4802,libc-bin,2.36-9+deb12u7,2.36-9+deb12u11,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-8058,libc-bin,2.36-9+deb12u7,2.36-9+deb12u13,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-0861,libc-bin,2.36-9+deb12u7,2.36-9+deb12u14,Low,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-0915,libc-bin,2.36-9+deb12u7,2.36-9+deb12u14,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-18374,libc-bin,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-19499,libc-bin,2.36-9+deb12u7,,Medium,High,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-19542,libc-bin,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-4046,libc-bin,2.36-9+deb12u7,2.36-9+deb12u14,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-4437,libc-bin,2.36-9+deb12u7,2.36-9+deb12u14,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-4438,libc-bin,2.36-9+deb12u7,2.36-9+deb12u14,Low,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-5435,libc-bin,2.36-9+deb12u7,,Medium,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-5450,libc-bin,2.36-9+deb12u7,,Medium,Critical,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-5928,libc-bin,2.36-9+deb12u7,,Medium,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-6238,libc-bin,2.36-9+deb12u7,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-6368,libc-bin,2.36-9+deb12u7,,Medium,Low,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-6791,libc-bin,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-77117,libc-bin,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-80489,libc-bin,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-84243,libc-bin,2.36-9+deb12u7,,Medium,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-8674,libc-bin,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-86805,libc-bin,2.36-9+deb12u7,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-89092,libc-bin,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-95818,libc-bin,2.36-9+deb12u7,,Medium,Low,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-97399,libc-bin,2.36-9+deb12u7,,Low,Low,affected,grype+trivy,debian base,accept (no fix)
+CVE-2010-4756,libc6,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2018-20796,libc6,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2019-1010022,libc6,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2019-1010023,libc6,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2019-1010024,libc6,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2019-1010025,libc6,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2019-9192,libc6,2.36-9+deb12u7,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-0395,libc6,2.36-9+deb12u7,2.36-9+deb12u10,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-15281,libc6,2.36-9+deb12u7,2.36-9+deb12u14,Low,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-4802,libc6,2.36-9+deb12u7,2.36-9+deb12u11,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-8058,libc6,2.36-9+deb12u7,2.36-9+deb12u13,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-0861,libc6,2.36-9+deb12u7,2.36-9+deb12u14,Low,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-0915,libc6,2.36-9+deb12u7,2.36-9+deb12u14,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-18374,libc6,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-19499,libc6,2.36-9+deb12u7,,Medium,High,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-19542,libc6,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-4046,libc6,2.36-9+deb12u7,2.36-9+deb12u14,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-4437,libc6,2.36-9+deb12u7,2.36-9+deb12u14,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-4438,libc6,2.36-9+deb12u7,2.36-9+deb12u14,Low,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-5435,libc6,2.36-9+deb12u7,,Medium,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-5450,libc6,2.36-9+deb12u7,,Medium,Critical,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-5928,libc6,2.36-9+deb12u7,,Medium,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-6238,libc6,2.36-9+deb12u7,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-6368,libc6,2.36-9+deb12u7,,Medium,Low,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-6791,libc6,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-77117,libc6,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-80489,libc6,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-84243,libc6,2.36-9+deb12u7,,Medium,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-8674,libc6,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-86805,libc6,2.36-9+deb12u7,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-89092,libc6,2.36-9+deb12u7,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-95818,libc6,2.36-9+deb12u7,,Medium,Low,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-97399,libc6,2.36-9+deb12u7,,Low,Low,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-1390,libcap2,1:2.66-4,1:2.66-4+deb12u1,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-4878,libcap2,1:2.66-4,1:2.66-4+deb12u3,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2022-27943,libgcc-s1,12.2.0-14,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-4039,libgcc-s1,12.2.0-14,12.2.0-14+deb12u1,Low,Negligible,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-102010,libgcc-s1,12.2.0-14,,Medium,High,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2026-114690,libgcc-s1,12.2.0-14,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-114691,libgcc-s1,12.2.0-14,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-115455,libgcc-s1,12.2.0-14,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-95619,libgcc-s1,12.2.0-14,,Medium,High,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2018-6829,libgcrypt20,1.10.1-3,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2024-2236,libgcrypt20,1.10.1-3,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-41989,libgcrypt20,1.10.1-3,1.10.1-3+deb12u1,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2011-3389,libgnutls30,3.7.9-2+deb12u2,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2024-12243,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u4,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2024-28834,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u3,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2024-28835,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u3,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-14831,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u6,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-32988,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u5,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-32989,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u5,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-32990,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u5,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-6395,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u5,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-9820,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u6,Low,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-33845,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u7,Critical,Critical,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-33846,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u7,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-3833,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u7,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-42009,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u7,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-42010,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u7,Critical,Critical,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-42011,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u7,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-42012,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u7,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-42013,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u7,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-42014,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u7,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-42015,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u7,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-5260,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u7,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-5419,libgnutls30,3.7.9-2+deb12u2,3.7.9-2+deb12u7,Low,Low,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-67693,libgnutls30,3.7.9-2+deb12u2,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-88647,libgnutls30,3.7.9-2+deb12u2,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-88648,libgnutls30,3.7.9-2+deb12u2,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-95184,libgnutls30,3.7.9-2+deb12u2,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-95209,libgnutls30,3.7.9-2+deb12u2,,,Negligible,,grype,debian base,accept (no fix)
+CVE-2026-95210,libgnutls30,3.7.9-2+deb12u2,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-31115,liblzma5,5.4.1-0.2,5.4.1-1,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-34743,liblzma5,5.4.1-0.2,5.4.1-1+deb12u1,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+DLA-4783-1,liblzma5,5.4.1-0.2,5.4.1-1+deb12u2,Unknown,,fixed,trivy,debian base,base-refresh
+TEMP-1147318-639065,liblzma5,5.4.1-0.2,5.4.1-1+deb12u2,Unknown,,fixed,trivy,debian base,base-refresh
+CVE-2022-0563,libmount1,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-14104,libmount1,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-13595,libmount1,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-27456,libmount1,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-3184,libmount1,2.38.1-5+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2026-53613,libmount1,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-53615,libmount1,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-78410,libmount1,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-13757,libp11-kit0,0.24.1-2,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-18938,libp11-kit0,0.24.1-2,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2024-10041,libpam-modules,1.5.2-6+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2024-22365,libpam-modules,1.5.2-6+deb12u1,1.5.2-6+deb12u2,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-6020,libpam-modules,1.5.2-6+deb12u1,1.5.2-6+deb12u2,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-54411,libpam-modules,1.5.2-6+deb12u1,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2024-10041,libpam-modules-bin,1.5.2-6+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2024-22365,libpam-modules-bin,1.5.2-6+deb12u1,1.5.2-6+deb12u2,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-6020,libpam-modules-bin,1.5.2-6+deb12u1,1.5.2-6+deb12u2,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-54411,libpam-modules-bin,1.5.2-6+deb12u1,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2024-10041,libpam-runtime,1.5.2-6+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2024-22365,libpam-runtime,1.5.2-6+deb12u1,1.5.2-6+deb12u2,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-6020,libpam-runtime,1.5.2-6+deb12u1,1.5.2-6+deb12u2,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-54411,libpam-runtime,1.5.2-6+deb12u1,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2024-10041,libpam0g,1.5.2-6+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2024-22365,libpam0g,1.5.2-6+deb12u1,1.5.2-6+deb12u2,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-6020,libpam0g,1.5.2-6+deb12u1,1.5.2-6+deb12u2,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-54411,libpam0g,1.5.2-6+deb12u1,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2022-0563,libsmartcols1,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-14104,libsmartcols1,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-13595,libsmartcols1,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-27456,libsmartcols1,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-3184,libsmartcols1,2.38.1-5+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2026-53613,libsmartcols1,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-53615,libsmartcols1,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-78410,libsmartcols1,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2022-27943,libstdc++6,12.2.0-14,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-4039,libstdc++6,12.2.0-14,12.2.0-14+deb12u1,Low,Negligible,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-102010,libstdc++6,12.2.0-14,,Medium,High,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2026-114690,libstdc++6,12.2.0-14,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-114691,libstdc++6,12.2.0-14,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-115455,libstdc++6,12.2.0-14,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-95619,libstdc++6,12.2.0-14,,Medium,High,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2013-4392,libsystemd0,252.22-1~deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-31437,libsystemd0,252.22-1~deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-31438,libsystemd0,252.22-1~deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-31439,libsystemd0,252.22-1~deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-50387,libsystemd0,252.22-1~deb12u1,252.23-1~deb12u1,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2023-50868,libsystemd0,252.22-1~deb12u1,252.23-1~deb12u1,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-4598,libsystemd0,252.22-1~deb12u1,252.38-1~deb12u1,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-15059,libsystemd0,252.22-1~deb12u1,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-16742,libsystemd0,252.22-1~deb12u1,,High,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-29111,libsystemd0,252.22-1~deb12u1,252.39-1~deb12u2,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-40225,libsystemd0,252.22-1~deb12u1,252.39-1~deb12u2,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-40226,libsystemd0,252.22-1~deb12u1,252.39-1~deb12u2,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-40228,libsystemd0,252.22-1~deb12u1,,Low,Low,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-4105,libsystemd0,252.22-1~deb12u1,252.39-1~deb12u2,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2024-12133,libtasn1-6,4.19.0-2,4.19.0-2+deb12u1,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-13151,libtasn1-6,4.19.0-2,,Low,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-50495,libtinfo6,6.4-4,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-6141,libtinfo6,6.4-4,,Low,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-69720,libtinfo6,6.4-4,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2013-4392,libudev1,252.22-1~deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-31437,libudev1,252.22-1~deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-31438,libudev1,252.22-1~deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-31439,libudev1,252.22-1~deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-50387,libudev1,252.22-1~deb12u1,252.23-1~deb12u1,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2023-50868,libudev1,252.22-1~deb12u1,252.23-1~deb12u1,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-4598,libudev1,252.22-1~deb12u1,252.38-1~deb12u1,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-15059,libudev1,252.22-1~deb12u1,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-16742,libudev1,252.22-1~deb12u1,,High,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-29111,libudev1,252.22-1~deb12u1,252.39-1~deb12u2,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-40225,libudev1,252.22-1~deb12u1,252.39-1~deb12u2,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-40226,libudev1,252.22-1~deb12u1,252.39-1~deb12u2,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-40228,libudev1,252.22-1~deb12u1,,Low,Low,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-4105,libudev1,252.22-1~deb12u1,252.39-1~deb12u2,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2022-0563,libuuid1,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-14104,libuuid1,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-13595,libuuid1,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-27456,libuuid1,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-3184,libuuid1,2.38.1-5+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2026-53613,libuuid1,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-53615,libuuid1,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-78410,libuuid1,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2007-5686,login,1:4.13+dfsg1-1+b1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-29383,login,1:4.13+dfsg1-1+b1,1:4.13+dfsg1-1+deb12u1,Low,Low,fixed,grype+trivy,debian base,base-refresh
+CVE-2023-4641,login,1:4.13+dfsg1-1+b1,1:4.13+dfsg1-1+deb12u1,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2024-56433,login,1:4.13+dfsg1-1+b1,,Low,Low,affected,grype+trivy,debian base,accept (no fix)
+TEMP-0628843-DBAD28,login,1:4.13+dfsg1-1+b1,,Low,,affected,trivy,debian base,accept (no fix)
+CVE-2022-0563,mount,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-14104,mount,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-13595,mount,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-27456,mount,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-3184,mount,2.38.1-5+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2026-53613,mount,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-53615,mount,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-78410,mount,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-50495,ncurses-base,6.4-4,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-6141,ncurses-base,6.4-4,,Low,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-69720,ncurses-base,6.4-4,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-50495,ncurses-bin,6.4-4,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-6141,ncurses-bin,6.4-4,,Low,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-69720,ncurses-bin,6.4-4,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2007-5686,passwd,1:4.13+dfsg1-1+b1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-29383,passwd,1:4.13+dfsg1-1+b1,1:4.13+dfsg1-1+deb12u1,Low,Low,fixed,grype+trivy,debian base,base-refresh
+CVE-2023-4641,passwd,1:4.13+dfsg1-1+b1,1:4.13+dfsg1-1+deb12u1,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2024-56433,passwd,1:4.13+dfsg1-1+b1,,Low,Low,affected,grype+trivy,debian base,accept (no fix)
+TEMP-0628843-DBAD28,passwd,1:4.13+dfsg1-1+b1,,Low,,affected,trivy,debian base,accept (no fix)
+CVE-2011-4116,perl-base,5.36.0-7+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2023-31484,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u3,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2023-31486,perl-base,5.36.0-7+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2024-56406,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u2,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-15649,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u4,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2025-40909,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u3,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-12087,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u4,Medium,Critical,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-13221,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u4,Critical,Critical,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-15534,perl-base,5.36.0-7+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-19487,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u4,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-42496,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u4,Critical,Critical,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-42497,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u4,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-48959,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u4,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-48962,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u4,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-57432,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u4,High,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-57433,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u4,High,Critical,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-7010,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u4,Medium,Medium,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-7017,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u4,Medium,High,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-82560,perl-base,5.36.0-7+deb12u1,,Medium,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-8376,perl-base,5.36.0-7+deb12u1,5.36.0-7+deb12u4,Critical,Critical,fixed,grype+trivy,debian base,base-refresh
+CVE-2026-9538,perl-base,5.36.0-7+deb12u1,,High,High,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-5958,sed,4.9-1,4.9-1+deb12u1,Medium,Low,fixed,grype+trivy,debian base,base-refresh
+TEMP-0517018-A83CE6,sysvinit-utils,3.06-4,,Low,,affected,trivy,debian base,accept (no fix)
+CVE-2005-2541,tar,1.34+dfsg-1.2+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-18477,tar,1.34+dfsg-1.2+deb12u1,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-18508,tar,1.34+dfsg-1.2+deb12u1,,Medium,Medium,fix_deferred,grype+trivy,debian base,accept (no fix)
+CVE-2026-5704,tar,1.34+dfsg-1.2+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+TEMP-0290435-0B57B5,tar,1.34+dfsg-1.2+deb12u1,,Low,,affected,trivy,debian base,accept (no fix)
+DLA-4792-1,tzdata,2024a-0+deb12u1,2026c-0+deb12u1,Unknown,,fixed,trivy,debian base,base-refresh
+DLA-4854-1,tzdata,2024a-0+deb12u1,2026e-0+deb12u1,Unknown,,fixed,trivy,debian base,base-refresh
+DLA-4867-1,tzdata,2024a-0+deb12u1,2026f-0+deb12u1,Unknown,,fixed,trivy,debian base,base-refresh
+CVE-2022-0563,util-linux,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-14104,util-linux,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-13595,util-linux,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-27456,util-linux,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-3184,util-linux,2.38.1-5+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2026-53613,util-linux,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-53615,util-linux,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-78410,util-linux,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2022-0563,util-linux-extra,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-14104,util-linux-extra,2.38.1-5+deb12u1,,Low,Negligible,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-13595,util-linux-extra,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-27456,util-linux-extra,2.38.1-5+deb12u1,,Medium,Medium,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-3184,util-linux-extra,2.38.1-5+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,debian base,accept (no fix)
+CVE-2026-53613,util-linux-extra,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-53615,util-linux-extra,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2026-78410,util-linux-extra,2.38.1-5+deb12u1,,High,High,affected,grype+trivy,debian base,accept (no fix)
+CVE-2025-0838,libabsl20220623,20220623.1-1,20220623.1-1+deb12u1,Critical,Critical,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2023-39616,libaom3,3.6.0-1,,High,High,will_not_fix,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2023-6879,libaom3,3.6.0-1,,Critical,Critical,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2024-5171,libaom3,3.6.0-1,3.6.0-1+deb12u1,Critical,Critical,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56208,libaom3,3.6.0-1,3.6.0-1+deb12u3,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56209,libaom3,3.6.0-1,3.6.0-1+deb12u3,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56210,libaom3,3.6.0-1,3.6.0-1+deb12u3,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56211,libaom3,3.6.0-1,3.6.0-1+deb12u3,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2025-48174,libavif15,0.11.1-1,0.11.1-1+deb12u1,Critical,Critical,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2025-48175,libavif15,0.11.1-1,0.11.1-1+deb12u1,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-111497,libbrotli1,1.0.9-2+b6,1.0.9-2+deb12u1,Critical,Critical,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2023-32570,libdav1d6,1.0.0-2+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2023-51792,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,Medium,Low,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2024-38949,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2024-38950,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2025-61147,libde265-0,1.0.11-1+deb12u2,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-33164,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-33165,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-45382,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-45383,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-49295,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,Medium,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-49337,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-49346,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,Medium,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-54240,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,Medium,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-54241,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,Medium,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-88373,libde265-0,1.0.11-1+deb12u2,,Medium,High,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-A338F9,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,Unknown,,fixed,trivy,image-filter module deps,base-refresh
+TEMP-0000000-FE6BBE,libde265-0,1.0.11-1+deb12u2,1.0.11-1+deb12u3,Unknown,,fixed,trivy,image-filter module deps,base-refresh
+CVE-2023-52425,libexpat1,2.5.0-1,2.5.0-1+deb12u2,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2023-52426,libexpat1,2.5.0-1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2024-28757,libexpat1,2.5.0-1,2.5.0-1+deb12u4,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2024-45490,libexpat1,2.5.0-1,2.5.0-1+deb12u1,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2024-45491,libexpat1,2.5.0-1,2.5.0-1+deb12u1,Critical,Critical,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2024-45492,libexpat1,2.5.0-1,2.5.0-1+deb12u1,Critical,Critical,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2024-50602,libexpat1,2.5.0-1,2.5.0-1+deb12u2,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2024-8176,libexpat1,2.5.0-1,2.5.0-1+deb12u2,Medium,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2025-59375,libexpat1,2.5.0-1,2.5.0-1+deb12u5,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2025-66382,libexpat1,2.5.0-1,,Medium,Medium,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-102633,libexpat1,2.5.0-1,2.5.0-1+deb12u5,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-113351,libexpat1,2.5.0-1,,High,High,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-115506,libexpat1,2.5.0-1,,Unknown,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-117610,libexpat1,2.5.0-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-118370,libexpat1,2.5.0-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-24515,libexpat1,2.5.0-1,2.5.0-1+deb12u4,Low,Low,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-25210,libexpat1,2.5.0-1,2.5.0-1+deb12u4,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-32776,libexpat1,2.5.0-1,2.5.0-1+deb12u4,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-32777,libexpat1,2.5.0-1,2.5.0-1+deb12u4,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-32778,libexpat1,2.5.0-1,2.5.0-1+deb12u4,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-41080,libexpat1,2.5.0-1,,Low,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-45186,libexpat1,2.5.0-1,2.5.0-1+deb12u4,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-50219,libexpat1,2.5.0-1,2.5.0-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56131,libexpat1,2.5.0-1,2.5.0-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56132,libexpat1,2.5.0-1,2.5.0-1+deb12u5,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56403,libexpat1,2.5.0-1,2.5.0-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56404,libexpat1,2.5.0-1,2.5.0-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56405,libexpat1,2.5.0-1,2.5.0-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56406,libexpat1,2.5.0-1,2.5.0-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56407,libexpat1,2.5.0-1,2.5.0-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56408,libexpat1,2.5.0-1,2.5.0-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56409,libexpat1,2.5.0-1,2.5.0-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56410,libexpat1,2.5.0-1,2.5.0-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56411,libexpat1,2.5.0-1,2.5.0-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-56412,libexpat1,2.5.0-1,2.5.0-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-66046,libexpat1,2.5.0-1,2.5.0-1+deb12u4,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-72522,libexpat1,2.5.0-1,2.5.0-1+deb12u3,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-76957,libexpat1,2.5.0-1,2.5.0-1+deb12u3,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-77214,libexpat1,2.5.0-1,2.5.0-1+deb12u5,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-93990,libexpat1,2.5.0-1,2.5.0-1+deb12u4,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2025-27363,libfreetype6,2.12.1+dfsg-5,2.12.1+dfsg-5+deb12u4,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-95512,libfreetype6,2.12.1+dfsg-5,,Medium,Medium,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-9672,libgd3,2.3.3-9,2.3.3-9+deb12u1,High,Unknown,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2023-29659,libheif1,1.15.1-1,1.15.1-1+deb12u1,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2023-49462,libheif1,1.15.1-1,1.15.1-1+deb12u1,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2023-49463,libheif1,1.15.1-1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2024-25269,libheif1,1.15.1-1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2024-41311,libheif1,1.15.1-1,1.15.1-1+deb12u1,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2025-68431,libheif1,1.15.1-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-120208,libheif1,1.15.1-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-32738,libheif1,1.15.1-1,,Medium,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-32739,libheif1,1.15.1-1,,Medium,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-32740,libheif1,1.15.1-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-32741,libheif1,1.15.1-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-32814,libheif1,1.15.1-1,,Medium,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-32882,libheif1,1.15.1-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-3949,libheif1,1.15.1-1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-41069,libheif1,1.15.1-1,,Medium,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-41071,libheif1,1.15.1-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-47178,libheif1,1.15.1-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-47247,libheif1,1.15.1-1,,Medium,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-47254,libheif1,1.15.1-1,,Medium,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-47709,libheif1,1.15.1-1,,Medium,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-47714,libheif1,1.15.1-1,,Medium,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-48029,libheif1,1.15.1-1,,Medium,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-49271,libheif1,1.15.1-1,,Medium,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-50142,libheif1,1.15.1-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-62289,libheif1,1.15.1-1,,High,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-62292,libheif1,1.15.1-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-84384,libheif1,1.15.1-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-84444,libheif1,1.15.1-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-84446,libheif1,1.15.1-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-84447,libheif1,1.15.1-1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-84448,libheif1,1.15.1-1,,Medium,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-84449,libheif1,1.15.1-1,,Medium,Low,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-84450,libheif1,1.15.1-1,,High,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-84451,libheif1,1.15.1-1,,High,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-0A1CC5,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-0F03E5,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-153207,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-16F469,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-177737,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-18A2CE,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-1B5D39,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-1FC908,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-21F713,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-25573F,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-301DE5,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-35A060,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-415AE1,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-4EF776,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-5124DE,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-57F868,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-625D50,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-6C5194,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-75D4C4,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-78AC20,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-7FD9AF,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-809756,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-81967A,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-8A4B18,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-9253BB,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-9465BB,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-956D99,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-98A003,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-BBE297,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-C11E78,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-C86CAF,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-D2EEB5,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-DB3DE2,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-E83054,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-F2B97A,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-0000000-FDE8B2,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-1148137-089975,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+TEMP-1148137-126A7B,libheif1,1.15.1-1,,Unknown,,affected,trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2017-9937,libjbig0,2.1-6.1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2021-4214,libpng16-16,1.6.39-2,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2025-28162,libpng16-16,1.6.39-2,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2025-28164,libpng16-16,1.6.39-2,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2025-64505,libpng16-16,1.6.39-2,1.6.39-2+deb12u1,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2025-64506,libpng16-16,1.6.39-2,1.6.39-2+deb12u1,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2025-64720,libpng16-16,1.6.39-2,1.6.39-2+deb12u1,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2025-65018,libpng16-16,1.6.39-2,1.6.39-2+deb12u1,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2025-66293,libpng16-16,1.6.39-2,1.6.39-2+deb12u1,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-22695,libpng16-16,1.6.39-2,1.6.39-2+deb12u2,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-22801,libpng16-16,1.6.39-2,1.6.39-2+deb12u2,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-25646,libpng16-16,1.6.39-2,1.6.39-2+deb12u3,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-33416,libpng16-16,1.6.39-2,1.6.39-2+deb12u4,Medium,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-33636,libpng16-16,1.6.39-2,1.6.39-2+deb12u4,Medium,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-34757,libpng16-16,1.6.39-2,1.6.39-2+deb12u5,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-3713,libpng16-16,1.6.39-2,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-46675,libpng16-16,1.6.39-2,1.6.39-2+deb12u6,Medium,Unknown,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2017-16232,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2018-10126,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2022-1210,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2023-1916,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2023-25433,libtiff6,4.5.0-6+deb12u1,4.5.0-6+deb12u2,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2023-26965,libtiff6,4.5.0-6+deb12u1,4.5.0-6+deb12u2,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2023-26966,libtiff6,4.5.0-6+deb12u1,4.5.0-6+deb12u2,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2023-2908,libtiff6,4.5.0-6+deb12u1,4.5.0-6+deb12u2,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2023-3164,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2023-3618,libtiff6,4.5.0-6+deb12u1,4.5.0-6+deb12u2,Medium,Medium,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2023-52355,libtiff6,4.5.0-6+deb12u1,,High,High,will_not_fix,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2023-52356,libtiff6,4.5.0-6+deb12u1,4.5.0-6+deb12u2,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2023-6228,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2023-6277,libtiff6,4.5.0-6+deb12u1,,Medium,Medium,will_not_fix,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2024-13978,libtiff6,4.5.0-6+deb12u1,,Low,Low,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2024-7006,libtiff6,4.5.0-6+deb12u1,4.5.0-6+deb12u2,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2025-61143,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2025-61144,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2025-61145,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2025-8176,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2025-8177,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2025-8534,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2025-8851,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2025-8961,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2025-9165,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2025-9900,libtiff6,4.5.0-6+deb12u1,4.5.0-6+deb12u3,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-12912,libtiff6,4.5.0-6+deb12u1,,High,High,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-18495,libtiff6,4.5.0-6+deb12u1,,Medium,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-36849,libtiff6,4.5.0-6+deb12u1,,High,Unknown,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-4775,libtiff6,4.5.0-6+deb12u1,4.5.0-6+deb12u4,High,High,fixed,grype+trivy,image-filter module deps,base-refresh
+CVE-2026-52490,libtiff6,4.5.0-6+deb12u1,,High,Critical,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-52491,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-52492,libtiff6,4.5.0-6+deb12u1,,Low,Negligible,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-88806,libx11-6,2:1.8.4-2+deb12u2,,High,High,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-94283,libx11-6,2:1.8.4-2+deb12u2,,Medium,Medium,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-94284,libx11-6,2:1.8.4-2+deb12u2,,Medium,Medium,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-94285,libx11-6,2:1.8.4-2+deb12u2,,Medium,Medium,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-88806,libx11-data,2:1.8.4-2+deb12u2,,High,High,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-94283,libx11-data,2:1.8.4-2+deb12u2,,Medium,Medium,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-94284,libx11-data,2:1.8.4-2+deb12u2,,Medium,Medium,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-94285,libx11-data,2:1.8.4-2+deb12u2,,Medium,Medium,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-4367,libxpm4,1:3.5.12-1.1+deb12u1,,Medium,Medium,affected,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-94287,libxpm4,1:3.5.12-1.1+deb12u1,,Medium,Medium,fix_deferred,grype+trivy,image-filter module deps,remove-candidate (kept for drop-in)
+CVE-2026-103111,libpcre2-8-0,10.42-1,10.42-1+deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump-candidate (not chosen)
+CVE-2026-86145,libpcre2-8-0,10.42-1,10.42-1+deb12u1,High,High,fixed,grype+trivy,linked by nginx,bump-candidate (not chosen)
+CVE-2026-89156,libpcre2-8-0,10.42-1,10.42-1+deb12u1,Medium,Medium,fixed,grype+trivy,linked by nginx,bump-candidate (not chosen)
+CVE-2026-89157,libpcre2-8-0,10.42-1,10.42-1+deb12u1,High,High,fixed,grype+trivy,linked by nginx,bump-candidate (not chosen)
+CVE-2026-89158,libpcre2-8-0,10.42-1,10.42-1+deb12u1,Medium,Medium,fixed,grype+trivy,linked by nginx,bump-candidate (not chosen)
+CVE-2026-89160,libpcre2-8-0,10.42-1,10.42-1+deb12u1,Medium,Medium,fixed,grype+trivy,linked by nginx,bump-candidate (not chosen)
+CVE-2026-89161,libpcre2-8-0,10.42-1,10.42-1+deb12u1,High,High,fixed,grype+trivy,linked by nginx,bump-candidate (not chosen)
+CVE-2023-5678,libssl3,3.0.11-1~deb12u2,3.0.13-1~deb12u1,Medium,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2023-6129,libssl3,3.0.11-1~deb12u2,3.0.13-1~deb12u1,Medium,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2023-6237,libssl3,3.0.11-1~deb12u2,3.0.13-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-0727,libssl3,3.0.11-1~deb12u2,3.0.13-1~deb12u1,Medium,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-13176,libssl3,3.0.11-1~deb12u2,3.0.16-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-2511,libssl3,3.0.11-1~deb12u2,3.0.14-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-4603,libssl3,3.0.11-1~deb12u2,3.0.14-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-4741,libssl3,3.0.11-1~deb12u2,3.0.14-1~deb12u1,Low,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-5535,libssl3,3.0.11-1~deb12u2,3.0.15-1~deb12u1,Low,Critical,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-6119,libssl3,3.0.11-1~deb12u2,3.0.14-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-9143,libssl3,3.0.11-1~deb12u2,3.0.15-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-15467,libssl3,3.0.11-1~deb12u2,3.0.18-1~deb12u2,High,Critical,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-27587,libssl3,3.0.11-1~deb12u2,,Low,Negligible,affected,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-68160,libssl3,3.0.11-1~deb12u2,3.0.18-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-69418,libssl3,3.0.11-1~deb12u2,3.0.18-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-69419,libssl3,3.0.11-1~deb12u2,3.0.18-1~deb12u2,Medium,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-69420,libssl3,3.0.11-1~deb12u2,3.0.18-1~deb12u2,Low,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-69421,libssl3,3.0.11-1~deb12u2,3.0.18-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-9230,libssl3,3.0.11-1~deb12u2,3.0.17-1~deb12u3,Medium,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-9232,libssl3,3.0.11-1~deb12u2,3.0.17-1~deb12u3,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-22795,libssl3,3.0.11-1~deb12u2,3.0.18-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-22796,libssl3,3.0.11-1~deb12u2,3.0.18-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-28387,libssl3,3.0.11-1~deb12u2,3.0.19-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-28388,libssl3,3.0.11-1~deb12u2,3.0.19-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-28389,libssl3,3.0.11-1~deb12u2,3.0.19-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-28390,libssl3,3.0.11-1~deb12u2,3.0.19-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-31789,libssl3,3.0.11-1~deb12u2,3.0.19-1~deb12u2,Critical,Critical,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-31790,libssl3,3.0.11-1~deb12u2,3.0.19-1~deb12u2,Medium,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-34180,libssl3,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Low,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-34182,libssl3,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Medium,Critical,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-35189,libssl3,3.0.11-1~deb12u2,3.0.22-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-42766,libssl3,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-42767,libssl3,3.0.11-1~deb12u2,3.0.22-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-42770,libssl3,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Low,Low,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-45445,libssl3,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Medium,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-45446,libssl3,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-45447,libssl3,3.0.11-1~deb12u2,3.0.20-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-54872,libssl3,3.0.11-1~deb12u2,3.0.22-1~deb12u2,Medium,Low,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-54874,libssl3,3.0.11-1~deb12u2,3.0.22-1~deb12u1,Low,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-63072,libssl3,3.0.11-1~deb12u2,3.0.22-1~deb12u1,Medium,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-63074,libssl3,3.0.11-1~deb12u2,3.0.22-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-63076,libssl3,3.0.11-1~deb12u2,3.0.22-1~deb12u1,Medium,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-7383,libssl3,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Low,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-75803,libssl3,3.0.11-1~deb12u2,3.0.22-1~deb12u1,Low,Critical,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-75805,libssl3,3.0.11-1~deb12u2,3.0.22-1~deb12u2,Medium,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-75806,libssl3,3.0.11-1~deb12u2,3.0.22-1~deb12u2,Medium,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-77696,libssl3,3.0.11-1~deb12u2,3.0.22-1~deb12u2,Medium,Low,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-84782,libssl3,3.0.11-1~deb12u2,3.0.22-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-9076,libssl3,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Low,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2023-5678,openssl,3.0.11-1~deb12u2,3.0.13-1~deb12u1,Medium,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2023-6129,openssl,3.0.11-1~deb12u2,3.0.13-1~deb12u1,Medium,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2023-6237,openssl,3.0.11-1~deb12u2,3.0.13-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-0727,openssl,3.0.11-1~deb12u2,3.0.13-1~deb12u1,Medium,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-13176,openssl,3.0.11-1~deb12u2,3.0.16-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-2511,openssl,3.0.11-1~deb12u2,3.0.14-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-4603,openssl,3.0.11-1~deb12u2,3.0.14-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-4741,openssl,3.0.11-1~deb12u2,3.0.14-1~deb12u1,Low,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-5535,openssl,3.0.11-1~deb12u2,3.0.15-1~deb12u1,Low,Critical,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-6119,openssl,3.0.11-1~deb12u2,3.0.14-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2024-9143,openssl,3.0.11-1~deb12u2,3.0.15-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-15467,openssl,3.0.11-1~deb12u2,3.0.18-1~deb12u2,High,Critical,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-27587,openssl,3.0.11-1~deb12u2,,Low,Negligible,affected,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-68160,openssl,3.0.11-1~deb12u2,3.0.18-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-69418,openssl,3.0.11-1~deb12u2,3.0.18-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-69419,openssl,3.0.11-1~deb12u2,3.0.18-1~deb12u2,Medium,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-69420,openssl,3.0.11-1~deb12u2,3.0.18-1~deb12u2,Low,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-69421,openssl,3.0.11-1~deb12u2,3.0.18-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-9230,openssl,3.0.11-1~deb12u2,3.0.17-1~deb12u3,Medium,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2025-9232,openssl,3.0.11-1~deb12u2,3.0.17-1~deb12u3,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-22795,openssl,3.0.11-1~deb12u2,3.0.18-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-22796,openssl,3.0.11-1~deb12u2,3.0.18-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-28387,openssl,3.0.11-1~deb12u2,3.0.19-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-28388,openssl,3.0.11-1~deb12u2,3.0.19-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-28389,openssl,3.0.11-1~deb12u2,3.0.19-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-28390,openssl,3.0.11-1~deb12u2,3.0.19-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-31789,openssl,3.0.11-1~deb12u2,3.0.19-1~deb12u2,Critical,Critical,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-31790,openssl,3.0.11-1~deb12u2,3.0.19-1~deb12u2,Medium,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-34180,openssl,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Low,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-34182,openssl,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Medium,Critical,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-35189,openssl,3.0.11-1~deb12u2,3.0.22-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-42766,openssl,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-42767,openssl,3.0.11-1~deb12u2,3.0.22-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-42770,openssl,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Low,Low,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-45445,openssl,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Medium,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-45446,openssl,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-45447,openssl,3.0.11-1~deb12u2,3.0.20-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-54872,openssl,3.0.11-1~deb12u2,3.0.22-1~deb12u2,Medium,Low,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-54874,openssl,3.0.11-1~deb12u2,3.0.22-1~deb12u1,Low,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-63072,openssl,3.0.11-1~deb12u2,3.0.22-1~deb12u1,Medium,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-63074,openssl,3.0.11-1~deb12u2,3.0.22-1~deb12u1,Low,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-63076,openssl,3.0.11-1~deb12u2,3.0.22-1~deb12u1,Medium,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-7383,openssl,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Low,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-75803,openssl,3.0.11-1~deb12u2,3.0.22-1~deb12u1,Low,Critical,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-75805,openssl,3.0.11-1~deb12u2,3.0.22-1~deb12u2,Medium,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-75806,openssl,3.0.11-1~deb12u2,3.0.22-1~deb12u2,Medium,Medium,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-77696,openssl,3.0.11-1~deb12u2,3.0.22-1~deb12u2,Medium,Low,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-84782,openssl,3.0.11-1~deb12u2,3.0.22-1~deb12u2,High,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2026-9076,openssl,3.0.11-1~deb12u2,3.0.20-1~deb12u2,Low,High,fixed,grype+trivy,linked by nginx,bump (static openssl in nginx)
+CVE-2023-45853,zlib1g,1:1.2.13.dfsg-1,,Critical,,will_not_fix,trivy,linked by nginx,accept (no fix)
+CVE-2026-27171,zlib1g,1:1.2.13.dfsg-1,,Medium,Medium,affected,grype+trivy,linked by nginx,accept (no fix)
+CVE-2026-85091,zlib1g,1:1.2.13.dfsg-1,,Medium,High,affected,grype+trivy,linked by nginx,accept (no fix)
+CVE-2009-4487,nginx,1.25.5-1~bookworm,,,Negligible,,grype,nginx,backport-candidate
+CVE-2013-0337,nginx,1.25.5-1~bookworm,,,Negligible,,grype,nginx,backport-candidate
+CVE-2023-44487,nginx,1.25.5-1~bookworm,,,High,,grype,nginx,backport-candidate
+CVE-2026-15176,nginx,1.25.5-1~bookworm,,,Critical,,grype,nginx,backport-candidate
+CVE-2026-93479,nginx,1.25.5-1~bookworm,,,Critical,,grype,nginx,backport-candidate
+CVE-2026-95101,nginx,1.25.5-1~bookworm,,,Medium,,grype,nginx,backport-candidate
+CVE-2026-97205,nginx,1.25.5-1~bookworm,,,Critical,,grype,nginx,backport-candidate
+CVE-2026-97629,nginx,1.25.5-1~bookworm,,,High,,grype,nginx,backport-candidate
+CVE-2025-5222,libicu72,72.1-3,72.1-3+deb12u1,Medium,High,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2022-49043,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u2,High,High,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2023-39615,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u2,Medium,Medium,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2023-45322,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u2,Medium,Medium,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2024-25062,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u2,High,High,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2024-34459,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u2,Low,High,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2024-56171,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u2,Critical,Critical,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2025-24928,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u2,High,High,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2025-27113,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u2,High,High,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2025-32414,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u2,High,High,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2025-32415,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u2,High,High,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2025-49794,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u3,High,Critical,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2025-49796,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u3,High,Critical,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2025-6021,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u3,Medium,High,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2025-6170,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u3,Low,Low,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2025-8732,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u6,Low,Low,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2025-9714,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u5,Medium,Medium,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2026-0989,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u6,Low,Low,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2026-0990,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u6,Medium,Medium,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2026-0992,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u6,Low,Low,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2026-11979,libxml2,2.9.14+dfsg-1.3~deb12u1,,Low,Negligible,affected,grype+trivy,xslt module deps,remove-candidate (kept for drop-in)
+CVE-2026-1757,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u6,Low,Medium,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2026-6653,libxml2,2.9.14+dfsg-1.3~deb12u1,,Critical,Critical,fix_deferred,grype+trivy,xslt module deps,remove-candidate (kept for drop-in)
+CVE-2026-74860,libxml2,2.9.14+dfsg-1.3~deb12u1,,High,High,fix_deferred,grype+trivy,xslt module deps,remove-candidate (kept for drop-in)
+CVE-2026-76781,libxml2,2.9.14+dfsg-1.3~deb12u1,,Medium,Medium,fix_deferred,grype+trivy,xslt module deps,remove-candidate (kept for drop-in)
+CVE-2026-86138,libxml2,2.9.14+dfsg-1.3~deb12u1,,High,High,fix_deferred,grype+trivy,xslt module deps,remove-candidate (kept for drop-in)
+CVE-2026-86140,libxml2,2.9.14+dfsg-1.3~deb12u1,,High,High,fix_deferred,grype+trivy,xslt module deps,remove-candidate (kept for drop-in)
+CVE-2026-86142,libxml2,2.9.14+dfsg-1.3~deb12u1,,High,High,fix_deferred,grype+trivy,xslt module deps,remove-candidate (kept for drop-in)
+CVE-2026-86143,libxml2,2.9.14+dfsg-1.3~deb12u1,,High,High,fix_deferred,grype+trivy,xslt module deps,remove-candidate (kept for drop-in)
+CVE-2026-86144,libxml2,2.9.14+dfsg-1.3~deb12u1,,High,High,fix_deferred,grype+trivy,xslt module deps,remove-candidate (kept for drop-in)
+DSA-5990-1,libxml2,2.9.14+dfsg-1.3~deb12u1,2.9.14+dfsg-1.3~deb12u4,Unknown,,fixed,trivy,xslt module deps,base-refresh
+CVE-2015-9019,libxslt1.1,1.1.35-1,,Low,Negligible,affected,grype+trivy,xslt module deps,remove-candidate (kept for drop-in)
+CVE-2023-40403,libxslt1.1,1.1.35-1,1.1.35-1+deb12u2,Medium,Medium,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2024-55549,libxslt1.1,1.1.35-1,1.1.35-1+deb12u1,High,High,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2025-10911,libxslt1.1,1.1.35-1,,Medium,Medium,fix_deferred,grype+trivy,xslt module deps,remove-candidate (kept for drop-in)
+CVE-2025-11731,libxslt1.1,1.1.35-1,,Low,Low,affected,grype+trivy,xslt module deps,remove-candidate (kept for drop-in)
+CVE-2025-24855,libxslt1.1,1.1.35-1,1.1.35-1+deb12u1,High,High,fixed,grype+trivy,xslt module deps,base-refresh
+CVE-2025-7424,libxslt1.1,1.1.35-1,1.1.35-1+deb12u2,High,High,fixed,grype+trivy,xslt module deps,base-refresh
+DSA-5979-2,libxslt1.1,1.1.35-1,1.1.35-1+deb12u3,Unknown,,fixed,trivy,xslt module deps,base-refresh
